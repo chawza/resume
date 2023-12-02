@@ -1,17 +1,51 @@
 @media print {
-    @page {
-        size: A4;
-    }
+  @page {
+    size: A4;
+  }
 }
 
 h1 {
-    color: red;
+  border-bottom: 2px solid rgb(54, 54, 54);
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: underline;
 }
 
 table {
-    width: 100%;
+  width: 100%;
 }
 
-table th {
-    text-align: left;
+ul {
+  padding-left: 1.5rem;
+}
+
+th {
+  text-align: left;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  font-weight: 900;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(236, 236, 236);
+}
+
+td {
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+a {
+  font-style: italic;
 }
