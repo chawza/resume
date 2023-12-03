@@ -16,6 +16,12 @@ h2 {
   margin-top: 1rem;
 }
 
+h6 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+
 p {
   text-align: justify;
 }

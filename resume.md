@@ -1,4 +1,18 @@
+###### Nabeel Kahlil Maulana
+*Software Engineer*
+
 # Job Experience
+
+*February 2023 - Now*
+# PT Dana Bagus Indonesia
+Working Fulltime as Fullstack Developer on [DanaBagus](https://danabagus.id/). Apply business logic on Finance IT System and services. Develop web pages to support operational and customer support team. Develop [Danabgus](https://play.google.com/store/apps/details?id=mobile.danabagus.android&pcampaignid=web_share) Android app for student financing. Create and monitor finance report for OJK and other financial instituion.
+* Develop IT System using Django framework
+* Create web pages using django's template system and HTML/CSS/Javascript
+* Develop Android application using Kotlin and Android Studio
+* Deploy and monitor project as webservices
+* Write unit test for existing and new features to improve software stability
+* Create web service for third party partner
+
 
 *February 2021 - February 2022*
 ## PT Bank BPTN tbk
@@ -42,9 +56,10 @@ Working as Fullstack Developer Intern and contribute on building Content Managem
 ## Web Frameworks / Library
 | Experienced | Basic / Learned |
 | ----------- |---------------  |
-| React       | NextJs          |
-| NodeJs      | Django          |
-| MongoDB     | Laravel         |
+| Django      |  NextJs         |
+| React       |  Laravel        |
+| NodeJs      |                 |
+| MongoDB     |                 |
 | ExpressJS   |                 |
 
 ## Utility Tools
@@ -55,3 +70,4 @@ Working as Fullstack Developer Intern and contribute on building Content Managem
 |             | Sqlite          |
 |             | Typescripts     |
 |             | MySql           |
+|             | Postgresql      |
