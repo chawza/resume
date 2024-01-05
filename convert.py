@@ -10,8 +10,8 @@ def md_to_html(filepath):
     return f"<body>{html}</body>"
 
 
-def html_to_pdf(html_str):
+def html_to_pdf(html_str) -> bytes:
     html = HTML(string=html_str)
     css = CSS(filename='./styles/pdf.css')
-    html.write_pdf('./temp/resume.pdf', stylesheets=[css])
+    return html.write_pdf(stylesheets=[css])
     

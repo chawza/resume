@@ -17,16 +17,24 @@ def build_html_file(html):
 
     compiled = inline(html, extra_css=css)
 
-    with open(os.path.join(module_path, 'temp', 'resumt-html.html'), 'w') as file:
+    with open(os.path.join(module_path, 'temp', 'resume.html'), 'w') as file:
         file.write(compiled)
+        print("HTML resume saved in: ", file.name)
+
+def build_pdf_file(html):
+    pdf_bytes = convert.html_to_pdf(html_str=html)
+
+    with open(os.path.join(module_path, 'temp', 'resume.pdf'), 'wb') as file:
+        file.write(pdf_bytes)
+        print("PDF resume saved in: ", file.name)
 
 
 def app():
     md_path = os.path.join(module_path, 'resume.md')
-    html = convert.md_to_html(md_path)
+    html = convert.md_to_html(filepath=md_path)
 
     build_html_file(html)
-    convert.html_to_pdf(html)
+    build_pdf_file(html)
 
 
 if __name__ == '__main__':
