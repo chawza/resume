@@ -4,7 +4,7 @@
 # Job Experience
 
 *February 2023 - Now*
-# PT Dana Bagus Indonesia
+## PT Dana Bagus Indonesia
 Working Fulltime as Fullstack Developer on [DanaBagus](https://danabagus.id/). Apply business logic on Finance IT System and services. Develop web pages to support operational and customer support team. Develop [Danabgus](https://play.google.com/store/apps/details?id=mobile.danabagus.android&pcampaignid=web_share) Android app for student financing. Create and monitor finance report for OJK and other financial instituion.
 * Develop IT System using Django framework
 * Create web pages using django's template system and HTML/CSS/Javascript
