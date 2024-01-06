@@ -1,6 +1,7 @@
 @media print {
   @page {
     size: A4;
+    margin: 2rem;
   }
   :root {
     font-size: 12px;
