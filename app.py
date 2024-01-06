@@ -1,9 +1,11 @@
-from io import FileIO
 import os
 import pathlib
-from css_inline import inline
 
 import convert
+
+from io import FileIO
+from css_inline import inline
+
 
 path = pathlib.Path(__file__)
 module_path = path.parent.resolve()
