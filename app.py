@@ -18,7 +18,7 @@ def build_html_file(html):
     css = open(main_style_path, 'r').read()
     css += open(web_extra, 'r').read()
 
-    compiled = inline(html, extra_css=css)
+    compiled = html + '<style>' + css + '</style>'
 
     file = FileIO(os.path.join(module_path, 'temp', 'resume.html'), mode='w')
     file.write(compiled.encode())

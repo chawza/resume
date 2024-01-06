@@ -2,3 +2,11 @@ body {
     margin: auto auto;
     width: 50rem;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
