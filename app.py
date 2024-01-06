@@ -1,3 +1,4 @@
+from io import FileIO
 import os
 import pathlib
 from css_inline import inline
@@ -17,24 +18,26 @@ def build_html_file(html):
 
     compiled = inline(html, extra_css=css)
 
-    with open(os.path.join(module_path, 'temp', 'resume.html'), 'w') as file:
-        file.write(compiled)
-        print("HTML resume saved in: ", file.name)
+    file = FileIO(os.path.join(module_path, 'temp', 'resume.html'), mode='w')
+    file.write(compiled.encode())
+    return file
 
 def build_pdf_file(html):
     pdf_bytes = convert.html_to_pdf(html_str=html)
 
-    with open(os.path.join(module_path, 'temp', 'resume.pdf'), 'wb') as file:
-        file.write(pdf_bytes)
-        print("PDF resume saved in: ", file.name)
-
+    file = FileIO(os.path.join(module_path, 'temp', 'resume.pdf'), mode='wb')
+    file.write(pdf_bytes)
+    return file
 
 def app():
     md_path = os.path.join(module_path, 'resume.md')
-    html = convert.md_to_html(filepath=md_path)
+    html_str = convert.md_to_html(filepath=md_path)
 
-    build_html_file(html)
-    build_pdf_file(html)
+    html = build_html_file(html_str)
+    pdf = build_pdf_file(html_str)
+
+    print("HTML File saved in ", html.name)
+    print("PDF File saved in ", pdf.name)
 
 
 if __name__ == '__main__':
