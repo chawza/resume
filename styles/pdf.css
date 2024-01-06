@@ -5,6 +5,11 @@
   }
   :root {
     font-size: 12px;
+    /*
+      italic: http://legionfonts.com/fonts/arial-italic#google_vignette
+    */
+    font-family: Arial;
+    line-height: 1rem;
   }
 }
 
